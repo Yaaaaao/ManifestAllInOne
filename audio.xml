@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="alsa"
+            fetch="git://git.alsa-project.org"/>
+    <remote name="pulseaudio"
+            fetch="git://anongit.freedesktop.org/pulseaudio"/>
+    <remote name="github"
+            fetch="https://github.com"/>
+
+    <default remote="alsa"
+             revision="refs/heads/master"
+             dest-branch="master"/>
+
+    <project name="alsa-lib"
+             path="alsa/alsa-lib"/>
+    <project name="alsa-plugins"
+             path="alsa/alsa-plugins"/>
+    <project name="alsa-utils"
+             path="alsa/alsa-utils"/>
+    <project name="tinycompress"
+             path="alsa/tinycompress"/>
+    <project name="alsa-python"
+             path="alsa/alsa-python"/>
+    <project name="alsa-firmware"
+             path="alsa/alsa-firmware"/>
+    <project name="alsa-tools"
+             path="alsa/alsa-tools"/>
+    <project name="alsa-oss"
+             path="alsa/alsa-oss"/>
+    <project name="alsa-misc"
+             path="alsa/alsa-misc"/>
+
+    <project name="pulseaudio"
+             path="pulseaudio/pulseaudio"
+             remote="pulseaudio"/>
+    <project name="webrtc-audio-processing"
+             path="pulseaudio/webrtc-audio-processing"
+             remote="pulseaudio"/>
+    <project name="pavucontrol"
+             path="pulseaudio/pavucontrol"
+             remote="pulseaudio"/>
+    <project name="GNOME/libgnome-volume-control"
+             path="pulseaudio/libgnome-volume-control"
+             remote="github"/>
+    <project name="Distrotech/libcanberra"
+             path="libcanberra"
+             remote="github"/>
+
+</manifest>
