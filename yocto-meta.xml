@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="yocto"
+            fetch="git://git.yoctoproject.org"/>
+    <remote name="github"
+            fetch="https://github.com"/>
+    <remote name="linaro"
+            fetch="https://git.linaro.org"/>
+
+    <default remote="github"
+             revision="refs/heads/master"
+             dest-branch="master"/>
+
+    <project name="openembedded/openembedded-core"
+             path="openembedded/openembedded-core"/>
+    <project name="openembedded/bitbake"
+             path="openembedded/bitbake"/>
+    <project name="openembedded/meta-openembedded"
+             path="openembedded/meta-openembedded"/>
+
+    <project name="meta-raspberrypi"
+             path="meta-raspberrypi"
+             remote="yocto"/>
+
+    <project name="Freescale/meta-fsl-arm"
+             path="freescale/meta-fsl-arm"/>
+
+    <project name="openembedded/meta-linaro"
+             path="meta-linaro"
+             remote="linaro"/>
+
+    <project name="MentorEmbedded/meta-mentor"
+             path="meta-mentor"/>
+
+    <project name="meta-ivi"
+             path="meta-ivi"
+             remote="yocto"/>
+
+</manifest>
+
