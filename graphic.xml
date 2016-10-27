@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="wayland"
+            fetch="git://anongit.freedesktop.org/wayland"/>
+    <remote name="github"
+	    fetch="https://github.com"/>
+
+    <default remote="graphic"
+             revision="refs/heads/master"
+             dest-branch="master"/>
+
+    <project name="weston"
+             path="wayland/weston"
+             remote="wayland"/>
+
+</manifest>
+
