@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="github"
+            fetch="https://github.com"/>
+    <remote name="linaro"
+            fetch="https://git.linaro.org"/>
+
+    <default remote="linaro"
+             revision="refs/heads/master"
+             dest-branch="master"/>
+
+    <project name="lava-team/hacking-session"
+             path="lava-team/hacking-session"/>
+    <project name="lava-team/lava-functional-tests"
+             path="lava-team/lava-functional-tests"/>
+    <project name="lava-team/refactoring"
+             path="lava-team/refactoring"/>
+    <project name="lava/lava-coordinator"
+             path="lava/lava-coordinator"/>
+    <project name="lava/lava-deployment-tool"
+             path="lava/lava-deployment-tool"/>
+    <project name="lava/lava-dispatcher"
+             path="lava/lava-dispatcher"/>
+    <project name="lava/lava-lab"
+             path="lava/lava-lab"/>
+    <project name="lava/lava-server"
+             path="lava/lava-server"/>
+    <project name="lava/lava-tool"
+             path="lava/lava-tool"/>
+    <project name="mattface/pdudaemon"
+             path="lava/pdudaemon"
+             remote="github"/>
+    <project name="lava/vland"
+             path="lava/vland"/>
+    <project name="qa/24h-stress-test"
+             path="qa/24h-stress-test"/>
+    <project name="qa/manual-test-definitions"
+             path="qa/manual-test-definitions"/>
+    <project name="qa/test-definitions"
+             path="qa/test-definitions"/>
+    <project name="qa/wa2-lava"
+             path="qa/wa2-lava"/>
+
+</manifest>
+
