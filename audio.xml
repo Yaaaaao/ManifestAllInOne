@@ -27,7 +27,7 @@
              path="alsa/alsa-tools"/>
     <project name="alsa-oss"
              path="alsa/alsa-oss"/>
-    <project name="alsa-misc"
+    <project name="alsa"
              path="alsa/alsa-misc"/>
 
     <project name="pulseaudio"
