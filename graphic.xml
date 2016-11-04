@@ -2,6 +2,8 @@
 <manifest>
     <remote name="wayland"
             fetch="git://anongit.freedesktop.org/wayland"/>
+    <remote name="freedesktop"
+            fetch="git://anongit.freedesktop.org"/>
     <remote name="github"
 	    fetch="https://github.com"/>
 
@@ -11,6 +13,21 @@
 
     <project name="weston"
              path="wayland/weston"/>
+    <project name="wayland"
+             path="wayland/wayland"/>
+    <project name="wayland-protocols"
+             path="wayland/wayland-protocols"/>
+    <project name="libinput"
+             path="input/libinput"/>
+    <project name="libevdev"
+             path="input/libevdev"
+             remote="freedesktop"/>
+    <project name="evemu"
+             path="input/evemu"
+             remote="freedesktop"/>
+    <project name="evtest"
+             path="input/evtest"
+             remote="freedesktop"/>
 
 </manifest>
 
