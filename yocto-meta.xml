@@ -38,6 +38,8 @@
              path="GENIVI/meta-ivi"/>
     <project name="GENIVI/meta-genivi-dev"
              path="GENIVI/meta-genivi-dev"/>
+    <project name="GENIVI/genivi-dev-platform"
+             path="GENIVI/genivi-dev-platform"/>
 
 </manifest>
 
