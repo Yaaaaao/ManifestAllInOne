@@ -11,6 +11,7 @@
              revision="refs/heads/master"
              dest-branch="master"/>
 
+    <!-- core -->
     <project name="openembedded/openembedded-core"
              path="openembedded/openembedded-core"/>
     <project name="openembedded/bitbake"
@@ -32,12 +33,11 @@
     <project name="MentorEmbedded/meta-mentor"
              path="meta-mentor"/>
 
-    <project name="meta-ivi"
-             path="meta-ivi"
-             remote="yocto"/>
-
+    <!-- GENIVI layers -->
+    <project name="GENIVI/meta-ivi"
+             path="GENIVI/meta-ivi"/>
     <project name="GENIVI/meta-genivi-dev"
-             path="meta-genivi-dev"\>
+             path="GENIVI/meta-genivi-dev"/>
 
 </manifest>
 
