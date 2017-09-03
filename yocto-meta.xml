@@ -36,5 +36,8 @@
              path="meta-ivi"
              remote="yocto"/>
 
+    <project name="GENIVI/meta-genivi-dev"
+             path="meta-genivi-dev"\>
+
 </manifest>
 
