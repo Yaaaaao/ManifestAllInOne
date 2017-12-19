@@ -6,6 +6,8 @@
             fetch="https://github.com"/>
     <remote name="linaro"
             fetch="https://git.linaro.org"/>
+    <remote name="agl"
+            fetch="https://git.automotivelinux.org"/>
 
     <default remote="github"
              revision="refs/heads/master"
@@ -41,5 +43,18 @@
     <project name="GENIVI/genivi-dev-platform"
              path="GENIVI/genivi-dev-platform"/>
 
+    <!-- Automotive Grade Linux layers -->
+    <project name="AGL/meta-agl"
+             path="AGL/meta-agl"
+             remote="agl"/>
+    <project name="AGL/meta-agl-demo"
+             path="AGL/meta-agl-demo"
+             remote="agl"/>
+    <project name="AGL/meta-agl-devel"
+             path="AGL/meta-agl-devel"
+             remote="agl"/>
+    <project name="AGL/meta-agl-extra"
+             path="AGL/meta-agl-extra"
+             remote="agl"/>
 </manifest>
 
