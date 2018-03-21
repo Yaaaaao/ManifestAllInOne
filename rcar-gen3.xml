@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="github"
+            fetch="https://github.com"/>
+
+    <default remote="github" revision="refs/heads/rcar_gen3"/>
+
+    <!-- AVB -->
+    <project name="renesas-rcar/avb-applications" path="avb/avb-applications" revision="rcar-gen3"/>
+    <project name="renesas-rcar/avb-mch" path="avb/avb-mch" revision="rcar-gen3"/>
+    <project name="renesas-rcar/avb-mse" path="avb/avb-mse" revision="rcar-gen3"/>
+    <project name="renesas-rcar/avb-streaming" path="avb/avb-streaming" revision="rcar-gen3"/>
+
+    <!-- Bootloaders -->
+    <project name="renesas-rcar/arm-trusted-firmware" path="bl/arm-trusted-firmware"/>
+    <project name="renesas-rcar/flash_writer" path="bl/flash_writer"/>
+    <project name="renesas-rcar/optee_os" path="bl"/>
+    <project name="renesas-rcar/sampleta" path="bl/sampleta"/>
+    <project name="renesas-rcar/u-boot" path="bl/u-boot" revision="v2015.04/rcar-3.6.1"/>
+
+    <!-- Memory Manager -->
+    <project name="renesas-rcar/mmngr_drv" path="mmp/mmngr_drv"/>
+    <project name="renesas-rcar/mmngr_lib" path="mmp/mmngr_lib"/>
+
+    <!-- misc -->
+    <project name="renesas-rcar/meta-renesas" path="misc/meta-renesas" revision="rocko"/>
+    <project name="renesas-rcar/ImageCreate" path="misc/ImageCreate"/>
+    <project name="renesas-rcar/adsp_interface" path="misc/adsp_interface" revision="master"/>
+
+    <!-- Gstreamer -->
+    <project name="renesas-rcar/gst-omx" path="gst/gst-omx" revision="RCAR-GEN3/1.12.2"/>
+    <project name="renesas-rcar/gst-plugins-bad" path="gst/gst-plugins-bad" revision="RCAR-GEN3/1.12.2"/>
+    <project name="renesas-rcar/gst-plugins-good" path="gst/gst-plugins-good" revision="RCAR-GEN3/1.12.2"/>
+    <project name="renesas-rcar/gst-plugin-vspfilter" path="gst/gst-plugin-vspfilter" revision="RCAR-GEN3/1.0.0"/>
+
+    <!-- graphic -->
+    <project name="renesas-rcar/du_cmm" path="graphic/du_cmm" revision="rcar-gen3"/>
+    <project name="renesas-rcar/du_cmm_tp" path="graphic/du_cmm_tp" revision="rcar-gen3"/>
+    <project name="renesas-rcar/libgbm" path="graphic/libgbm" revision="rcar-gen3"/>
+    <project name="renesas-rcar/weston" path="graphic/weston" revision="rcar-gen3/2.0.0/gl-fallback"/>
+    <project name="renesas-rcar/wayland-kms" path="graphic/wayland-kms" revision="rcar-gen3"/>
+
+    <!-- QoS -->
+    <project name="renesas-rcar/qos_drv" path="qos/qos_drv" revision="rcar-gen3"/>
+    <project name="renesas-rcar/qos_lib" path="qos/qos_lib" revision="rcar-gen3"/>
+
+    <!-- VSP -->
+    <project name="renesas-rcar/vsp2driver" path="vsp/vsp2driver" revision="rcar-gen3"/>
+    <project name="renesas-rcar/vsp2driver_tp" path="vsp/vsp2driver_tp" revision="rcar-gen3"/>
+    <project name="renesas-rcar/vspm_drv" path="vsp/vspm_drv"/>
+    <project name="renesas-rcar/vspmif_drv" path="vsp/vspmif_drv"/>
+    <project name="renesas-rcar/vspmif_lib" path="vsp/vspmif_lib"/>
+</manifest>
+
