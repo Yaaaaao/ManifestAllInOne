@@ -26,6 +26,7 @@
     <project name="renesas-rcar/meta-renesas" path="misc/meta-renesas" revision="rocko"/>
     <project name="renesas-rcar/ImageCreate" path="misc/ImageCreate"/>
     <project name="renesas-rcar/adsp_interface" path="misc/adsp_interface" revision="master"/>
+    <project name="morimoto/dmm" path="misc/dmm" revision="master"/>
 
     <!-- Gstreamer -->
     <project name="renesas-rcar/gst-omx" path="gst/gst-omx" revision="RCAR-GEN3/1.12.2"/>
