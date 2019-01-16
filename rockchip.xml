@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="rockchip-android"
+	  fetch="https://github.com/rockchip-android" />
+  <remote name="rockchip-linux"
+	  fetch="https://github.com/rockchip-linux" />
+  <default remote="rockchip-android"
+	  revision="refs/heads/rk3399-box-7.1"/>
+
+  <project name="device-rockchip-common"       path="device/rockchip/common"/>
+  <project name="device-rockchip-rk3328"       path="device/rockchip/rk3328" revision="rk3328-box-7.1"/>
+  <project name="device-rockchip-rk3399"       path="device/rockchip/rk3399"/>
+  <project name="external-rk-pcba-test"        path="external/rk-pcba-test"/>
+  <project name="hardware-rockchip-audio"      path="hardware/rockchip/audio"/>
+  <project name="hardware-rockchip-camera"     path="hardware/rockchip/camera"/>
+  <project name="hardware-rockchip-hdmicec"    path="hardware/rockchip/hdmicec" revision="rk3328-box-7.1"/>
+  <project name="hardware-rockchip-hwcomposer" path="hardware/rockchip/hwcomposer"/>
+  <project name="hardware-rockchip-jpeghw"     path="hardware/rockchip/jpeghw"/>
+  <project name="hardware-rockchip-libgralloc" path="hardware/rockchip/libgralloc"/>
+  <project name="hardware-rockchip-libiep"     path="hardware/rockchip/libiep"/>
+  <project name="hardware-rockchip-liblights"  path="hardware/rockchip/liblights"/>
+  <project name="hardware-rockchip-librga"     path="hardware/rockchip/librga"/>
+  <project name="hardware-rockchip-librkvpu"   path="hardware/rockchip/librkvpu"/>
+  <project name="hardware-rockchip-omx_il"     path="hardware/rockchip/omx_il"/>
+  <project name="hardware-rockchip-power"      path="hardware/rockchip/power"/>
+  <project name="hardware-rockchip-sensor"     path="hardware/rockchip/sensor"/>
+  <project name="vendor-rockchip-common"       path="vendor/rockchip/common"/>
+  <project name="rkst"    path="rkst"/>
+  <project name="RKTools" path="RKTools"/>
+  <project name="u-boot"  path="u-boot" remote="rockchip-linux" revision="stable-4.4-rk3399-linux"/>
+  <project name="kernel"  path="kernel" remote="rockchip-linux" revision="stable-4.4-rk3399-linux"/>
+</manifest>
