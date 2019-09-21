@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- remote repo and gerrit review -->
+  <remote  name="aosp"
+	   fetch="https://aosp.tuna.tsinghua.edu.cn/"
+	   fetch1="git://mirrors.ustc.edu.cn/aosp/"
+           review="https://android-review.googlesource.com/" />
+  <remote  name="origin"
+	   fetch="https://github.com/rockchip-toybrick/"
+           review="https://android-review.googlesource.com/" />
+ 
+  <!-- aosp default repository r45 -->
+
+  <!-- rk checkout new default repository-->
+  <project path="art" name="art" remote="origin" revision="master-9.0"/>
+  <project path="external/libdrm" name="external-libdrm" remote="origin" revision="master-9.0"/>
+  <project path="external/f2fs-tools" name="external-f2fs-tools" remote="origin" revision="master-9.0"/>
+  <project path="hardware/libhardware" name="hardware-libhardware" remote="origin" revision="master-9.0"/>
+  <project path="system/netd" name="system-netd" remote="origin" revision="master-9.0"/>
+  <project path="system/sepolicy" name="system-sepolicy" remote="origin" revision="master-9.0"/>
+  <project path="packages/apps/Bluetooth" name="packages-apps-Bluetooth" remote="origin" revision="master-9.0"/>
+  <project path="hardware/broadcom/libbt" name="hardware-broadcom-libbt" remote="origin" revision="master-9.0"/>
+  <project path="hardware/ril" name="hardware-ril" remote="origin" revision="master-9.0"/>
+  <project path="system/core" name="system_core_9.0" remote="origin" revision="master-9.0"/>
+  <project path="system/vold" name="system-vold" remote="origin" revision="master-9.0"/>
+  <project path="system/bt" name="system-bt" remote="origin" revision="master-9.0"/>
+  <project path="device/google/atv" name="device-google-atv" remote="origin" revision="master-9.0"/>
+  <project path="frameworks/base" name="frameworks-base" remote="origin" revision="master-9.0"/>
+  <project path="hardware/broadcom/wlan" name="hardware-broadcom-wlan" remote="origin" revision="master-9.0"/>
+  <project path="hardware/interfaces" name="hardware-interfaces" remote="origin" revision="master-9.0"/>
+  <project path="frameworks/opt/net/wifi" name="frameworks-opt-net-wifi" remote="origin" revision="master-9.0"/>
+  <project path="packages/apps/ExactCalculator" name="packages-apps-ExactCalculator" remote="origin" revision="master-9.0"/>
+  <project path="frameworks/opt/net/ethernet" name="frameworks-opt-net-ethernet" remote="origin" revision="master-9.0"/>
+  <project path="frameworks/opt/telephony" name="frameworks-opt-telephony" remote="origin" revision="master-9.0"/>
+  <project path="frameworks/av" name="frameworks-av" remote="origin" revision="master-9.0"/>
+  <project path="frameworks/ex" name="frameworks-ex" remote="origin" revision="master-9.0"/>
+  <project path="frameworks/native" name="frameworks-native" remote="origin" revision="master-9.0"/>
+  <project path="packages/apps/Camera2" name="packages-apps-Camera2" remote="origin" revision="master-9.0"/>
+  <project path="packages/apps/TvSettings" name="packages-apps-TvSettings" remote="origin" revision="master-9.0"/>
+  <project path="packages/apps/Music" name="packages-apps-Music" remote="origin" revision="master-9.0"/>
+  <project path="packages/apps/Settings" name="packages-apps-Settings" remote="origin" revision="master-9.0"/>
+  <project path="packages/apps/Launcher3" name="packages-apps-Launcher3" remote="origin" revision="master-9.0"/>
+  <project path="packages/apps/SoundRecorder" name="packages-apps-SoundRecorder" remote="origin" revision="master-9.0"/>
+  <project path="packages/apps/Gallery2" name="packages-apps-Gallery2" remote="origin" revision="master-9.0"/>
+  <project path="packages/apps/QuickSearchBox" name="packages-apps-QuickSearchBox" remote="origin" revision="master-9.0"/>
+  <project path="packages/apps/WallpaperPicker" name="packages-apps-WallpaperPicker" remote="origin" revision="master-9.0"/>
+  <project path="packages/providers/MediaProvider" name="packages-providers-MediaProvider" remote="origin" revision="master-9.0"/>
+  <project path="packages/providers/TvProvider" name="packages-providers-TvProvider" remote="origin" revision="master-9.0"/>
+  <project path="packages/screensavers/PhotoTable" name="packages-screensavers-PhotoTable" remote="origin" revision="master-9.0"/>
+  <project path="packages/services/Telephony" name="packages-services-Telephony" remote="origin" revision="master-9.0"/>
+  <project path="bionic" name="bionic" remote="origin" revision="master-9.0"/>
+  <project path="bootable/recovery" name="bootable-recovery" remote="origin" revision="master-9.0"/>
+  <project path="build/make" name="build-make" remote="origin" revision="master-9.0">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
+    <linkfile dest="build/core" src="core"/>
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="build/target" src="target"/>
+    <linkfile dest="build/tools" src="tools"/>
+  </project>
+  <project path="external/boringssl" name="external-boringssl" remote="origin" revision="master-9.0"/>
+  <project path="external/skia" name="external-skia" remote="origin" revision="master-9.0"/>
+  <project path="external/perfetto" name="external-perfetto" remote="origin" revision="master-9.0"/>
+  <project path="external/ppp" name="external-ppp" remote="origin" revision="master-9.0"/>
+  <project path="external/speex" name="external-speex" remote="origin" revision="master-9.0"/>
+  <project path="external/tinyalsa" name="external-tinyalsa" remote="origin" revision="master-9.0"/>
+  <project path="external/wpa_supplicant_8" name="external-wpa_supplicant_8" remote="origin" revision="master-9.0"/>
+  <project path="external/chromium-libpac" name="external-chromium-libpac" remote="origin" revision="master-9.0"/>
+  <project path="external/chromium-webview" name="external-chromium-webview" remote="origin" revision="master-9.0"/>
+  <project path="external/libavc" name="external-libavc" remote="origin" revision="master-9.0"/>
+  <project path="external/libhevc" name="external-libhevc" remote="origin" revision="master-9.0"/>
+  <project path="external/libvpx" name="external-libvpx" remote="origin" revision="master-9.0"/>
+  <project path="packages/apps/Nfc" name="packages-apps-Nfc" remote="origin" revision="master-9.0"/>
+  <project path="packages/services/Telecomm" name="packages-services-Telecomm" remote="origin" revision="master-9.0"/>
+  <project path="system/libhidl" name="system-libhidl" remote="origin" revision="master-9.0"/>
+  <project path="system/libhwbinder" name="system-libhwbinder" remote="origin" revision="master-9.0"/>
+
+  <!-- rk modules repository-->
+  <project path="RKDocs/common" name="RKDocs-common" remote="origin" revision="master"/>
+  <project path="RKDocs/android" name="RKDocs-android" remote="origin" revision="master-9.0"/>
+  <project path="external/iperf" name="external-iperf" remote="origin" revision="master-9.0"/>
+  <project path="external/io" name="external-io" remote="origin" revision="master"/>
+  <project path="external/ntfs-3g" name="external-ntfs-3g" remote="origin" revision="master"/>
+  <project path="hardware/realtek" name="hardware-realtek" remote="origin" revision="master-9.0"/>
+  <project path="device/rockchip/common" name="device-rockchip-common" remote="origin" revision="master-9.0">
+      <copyfile src=".classpath" dest=".classpath"/>
+      <copyfile src="mkimage.sh" dest="mkimage.sh"/>
+      <copyfile src="javaenv.sh" dest="javaenv.sh"/>
+  </project>
+  <project path="external/usb_modeswitch" name="external-usb_modeswitch" remote="origin" revision="master-9.0"/>
+  <project path="hardware/rockchip/hdmicec" name="hardware-rockchip-hdmicec" remote="origin" revision="master-9.0"/>
+  <project path="hardware/rockchip/libiep" name="hardware-rockchip-libiep" remote="origin" revision="master-9.0"/>
+  <project path="hardware/rockchip/librga" name="hardware-rockchip-librga" remote="origin" revision="master-9.0"/>
+  <project path="hardware/rockchip/librkvpu" name="hardware-rockchip-librkvpu" remote="origin" revision="master"/>
+  <project path="hardware/rockchip/omx_il" name="hardware-rockchip-omx_il" remote="origin" revision="master"/>
+  <project path="external/abc" name="external-abc" remote="origin" revision="master-9.0"/>
+  <project path="external/rk_tee_user" name="external-rk_tee_user" remote="origin" revision="master"/>
+  <project path="hardware/rockchip/camera" name="hardware-rockchip-camera" remote="origin" revision="master-9.0"/>
+  <project path="hardware/rockchip/camera_engine_rkisp" name="hardware-rockchip-camera_engine_rkisp" remote="origin" revision="master-9.0"/>
+  <project path="hardware/rockchip/audio" name="hardware-rockchip-audio" remote="origin" revision="master-9.0"/>
+  <project path="hardware/rockchip/liblights" name="hardware-rockchip-liblights" remote="origin" revision="master"/>
+  <project path="hardware/rockchip/sensor" name="hardware-rockchip-sensor" remote="origin" revision="master-9.0"/>
+  <project path="rkst" name="rkst" remote="origin" revision="master"/>
+  <project path="vendor/rockchip/common" name="vendor-rockchip-common-9.0" remote="origin" revision="master-9.0"/>
+  <project path="vendor/rockchip/hardware" name="vendor-rockchip-hardware" remote="origin" revision="master-9.0"/>
+  <project path="hardware/rockchip/jpeghw" name="hardware-rockchip-jpeghw" remote="origin" revision="master"/>
+  <project path="hardware/rockchip/power" name="hardware-rockchip-power" remote="origin" revision="master-9.0"/>
+  <project path="hardware/rockchip/drmservice" name="hardware-rockchip-drmservice" remote="origin" revision="master-9.0"/>
+  <project path="hardware/rockchip/libmemtrack" name="hardware-rockchip-libmemtrack" remote="origin" revision="master-9.0"/>
+  <project path="system/tools/release_tools" name="system-tools-release_tools" remote="origin" revision="master-9.0">
+    <copyfile src="restore_patches.sh" dest="restore_patches.sh"/>
+  </project>
+  <project path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" name="prebuilts-gcc-linux-x86-aarch64-gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" remote="origin" revision="master"/>
+  <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" name="prebuilts-gcc-linux-x86-arm-gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" remote="origin" revision="master"/>
+  <project path="rkbin" name="rkbin" remote="origin" revision="master-9.0"/> 
+  <project path="hardware/rockchip/bootctrl" name="hardware-rockchip-bootctrl" remote="origin" revision="master-9.0"/> 
+
+  <!-- rk3399pro special repository-->
+  <project path="RKTools" name="RKTools" remote="origin" revision="master-9.0"/>
+  <project path="RKDocs/rk3399pro" name="RKDocs-rk3399pro" remote="origin" revision="master-9.0"/>
+  <project path="device/rockchip/rk3399pro" name="device-rockchip-rk3399pro" remote="origin" revision="master-9.0">
+      <copyfile src="buildspec.mk" dest="buildspec.mk"/>
+      <copyfile src="build.sh" dest="build.sh"/>
+  </project>
+  <project path="hardware/rockchip/hwcomposer" name="hardware-rockchip-hwcomposer" remote="origin" revision="master"/>
+  <project path="hardware/rockchip/libgralloc" name="hardware-rockchip-libgralloc" remote="origin" revision="master-9.0"/>
+  <project path="u-boot" name="u-boot" remote="origin" revision="master"/>
+  <project path="kernel" name="kernel" remote="origin" revision="stable-9.0"/>
+  <project path="RKNPUTool" name="RKNPUTool" remote="origin" revision="master"/>
+
+  <project path="rknn-toolkit" name="rknn-toolkit" remote="origin" revision="master-9.0"/>
+  <project path="hardware/rockchip/npu_powerctrl" name="hardware-rockchip-npu_powerctrl" remote="origin" revision="master-9.0"/>
+  <project path="hardware/rockchip/npu_transfer" name="hardware-rockchip-npu_transfer" remote="origin" revision="master-9.0"/>
+  <project path="hardware/rockchip/npu_monitor" name="hardware-rockchip-npu_monitor" remote="origin" revision="master-9.0"/>
+  <project path="hardware/rockchip/upgrade_tool" name="hardware-rockchip-upgrade_tool" remote="origin" revision="master-9.0"/>
+
+</manifest>
